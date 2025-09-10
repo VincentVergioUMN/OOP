@@ -116,3 +116,18 @@
 	String[] arr = s.split(",");
 	System.out.println(arr[1]);
 	// outputnya adalah banana
+
+	
+3. 	-Keamanan
+	Karena String immutable, datanya tidak bisa diubah setelah dibuat.
+	Hal ini sangat penting, misalnya ketika String digunakan untuk:
+		-password
+		-username
+		-URL
+		-koneksi database
+		-file path
+	Jika String bisa diubah, maka hacker bisa memodifikasi nilai tanpa sepengetahuan kita.
+	
+	-Thread Safety
+	Karena immutable, objek String aman digunakan di multi-threading tanpa perlu synchronization tambahan.
+	Beberapa thread bisa berbagi String yang sama tanpa khawatir ada perubahan data.
